@@ -4,15 +4,14 @@
 <table class="table" >
     <thead>
       <tr>
-        <th scope="col">Serial No</th>
+        <th scope="col">ID</th>
         <th scope="col">Book Name</th>
         <th scope="col">Publish Year</th>
         <th scope="col">Avability</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
+      <tr *ngFor="let book of books">
         <td>Teach Yourself C</td>
         <td>2006</td>
         <td>Yes</td>
