@@ -21,5 +21,4 @@ export class BookService {
     return this.books;
   }
 
-
 }

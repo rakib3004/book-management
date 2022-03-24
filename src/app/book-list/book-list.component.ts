@@ -14,4 +14,13 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteBook(bookName: string): void{
+    for(var bookDelete of this.books){
+      if(bookDelete.name==bookName){
+        console.log("Delete the book: "+bookName);
+
+      }
+    }
+  }
+
 }
