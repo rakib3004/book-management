@@ -17,7 +17,7 @@
         <td>{{book.year}}</td>
         <td *ngIf="book.availability">availabile</td>
         <td *ngIf="!book.availability">borrowed</td>
-        <td ><button type="button" (click)="deleteBook(book.name)" class="bg-danger">Delete</button></td>
+        <td ><button type="button" (click)="deleteBook(book.name)" class="btn btn-danger">Delete</button></td>
 
       </tr>      
     </tbody>
