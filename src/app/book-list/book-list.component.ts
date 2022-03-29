@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Book } from '../book';
 import { BookService } from '../book.service';
 
@@ -9,10 +10,11 @@ import { BookService } from '../book.service';
 })
 export class BookListComponent implements OnInit {
 
-  constructor(private bookService: BookService) { }
-  books = this.bookService.getBooks();
-
+  constructor(private bookService: BookService, private router : Router) { }
+books : Book[]=[];
   ngOnInit(): void {
+    this.books = this.bookService.getBooks();
+
   }
 
   deleteBook(book: Book){
@@ -22,7 +24,8 @@ export class BookListComponent implements OnInit {
 
   updateBook(book: Book){
     console.log(book)
-    this.books=this.bookService.updateBook(book);
+    this.bookService.setBookToBeUpdated(book);
+    this.router.navigate(['updateBook'])
   }
 
 }

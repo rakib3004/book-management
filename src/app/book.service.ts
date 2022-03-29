@@ -15,6 +15,9 @@ export class BookService {
                   {id:8,name:"Vue Programming",year:2014,availability:false},
                   {id:9,name:"Javascript Programming",year:2005,availability:false},
                   {id:10,name:"Typescript Programming",year:2015,availability:true}]
+
+                  bookToBeUpdated = new Book();
+                  
   constructor() { }
 
   getBooks(): Book[]{
@@ -34,6 +37,13 @@ return this.books;
     this.books = this.books.filter(book => givenBook.id!=book.id);
     return this.books;
         
+      }
+
+      getBookToBeUpdated(): Book{
+        return this.bookToBeUpdated;
+      }
+      setBookToBeUpdated(givenBook : Book){
+        this.bookToBeUpdated=givenBook;
       }
 
 }
