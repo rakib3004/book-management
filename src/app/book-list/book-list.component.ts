@@ -20,4 +20,9 @@ export class BookListComponent implements OnInit {
     this.books=this.bookService.deleteBook(book);
   }
 
+  updateBook(book: Book){
+    console.log(book)
+    this.books=this.bookService.updateBook(book);
+  }
+
 }

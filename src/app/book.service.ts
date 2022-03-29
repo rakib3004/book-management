@@ -28,4 +28,12 @@ return this.books;
     
   }
 
+
+  updateBook(givenBook : Book): Book[]{
+
+    this.books = this.books.filter(book => givenBook.id!=book.id);
+    return this.books;
+        
+      }
+
 }

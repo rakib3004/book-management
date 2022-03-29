@@ -7,7 +7,9 @@
         <th scope="col">Book Name</th>
         <th scope="col">Publish Year</th>
         <th scope="col">Avability</th>
-        <th scope="col">Action</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Update</th>
+
 
       </tr>
     </thead>
@@ -18,6 +20,7 @@
         <td *ngIf="book.availability">availabile</td>
         <td *ngIf="!book.availability">borrowed</td>
         <td ><button type="button" (click)="deleteBook(book)" class="btn btn-danger">Delete</button></td>
+        <td ><button type="button" (click)="updateBook(book)" class="btn btn-warning">Update</button></td>
 
       </tr>      
     </tbody>
