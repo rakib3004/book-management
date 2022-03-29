@@ -21,4 +21,11 @@ export class BookService {
     return this.books;
   }
 
+  deleteBook(givenBook : Book): Book[]{
+
+this.books = this.books.filter(book => givenBook.id!=book.id);
+return this.books;
+    
+  }
+
 }
