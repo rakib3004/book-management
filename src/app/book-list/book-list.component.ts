@@ -17,8 +17,9 @@ export class BookListComponent implements OnInit {
   deleteBook(bookName: string): void{
     for(var bookDelete of this.books){
       if(bookDelete.name==bookName){
-        console.log("Delete the book: "+bookName);
 
+        console.log("Delete the book: "+bookName);
+        this.books.splice(bookDelete.id)
       }
     }
   }
