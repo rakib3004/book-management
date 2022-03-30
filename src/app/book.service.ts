@@ -39,7 +39,7 @@ return this.books;
         
       }
 
-      getBookToBeUpdated(): Book{
+      getBookToBeUpdated(): Book{  
         return this.bookToBeUpdated;
       }
       setBookToBeUpdated(givenBook : Book){
