@@ -28,4 +28,8 @@ books : Book[]=[];
     this.router.navigate(['updateBook'])
   }
 
+  addBook(){
+    this.bookService.addBook();
+  }
+
 }
