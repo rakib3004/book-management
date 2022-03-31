@@ -15,12 +15,8 @@ export class UpdateBookComponent implements OnInit {
   books : Book[]=[];
 
   ngOnInit(): void {
-    this.books = this.bookService.getBooks();
   }
 
-  backToBookList(){
-    this.route.navigate([''])
-  }
 
   saveToBookList(){
     
