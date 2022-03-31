@@ -19,7 +19,9 @@ export class UpdateBookComponent implements OnInit {
 
 
   updateBook(){
-    console.log(this.givenBook)
+    console.log(this.givenBook);
+    this.bookService.updateBook(this.givenBook);
+    this.route.navigate([''])
   }
 
 }
