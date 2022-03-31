@@ -30,6 +30,7 @@ books : Book[]=[];
 
   addBook(){
     this.bookService.addBook();
+    this.router.navigate(['addBook'])
   }
 
 }
