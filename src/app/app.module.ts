@@ -7,6 +7,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { HomeMenuComponent } from './home-menu/home-menu.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
