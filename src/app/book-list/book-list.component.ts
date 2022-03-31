@@ -22,7 +22,7 @@ books : Book[]=[];
     this.books=this.bookService.deleteBook(book);
   }
 
-  updateBook(book: Book){
+  updateBook(book: Book, i:number){
     console.log(book)
     this.bookService.setBookToBeUpdated(book);
     this.router.navigate(['updateBook'])

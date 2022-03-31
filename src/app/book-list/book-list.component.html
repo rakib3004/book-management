@@ -14,12 +14,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let book of books">
+      <tr *ngFor="let book of books; let i=index">
         <td>{{book.name}}</td>
         <td>{{book.year}}</td>
         <td *ngIf="book.availability">availabile</td>
         <td *ngIf="!book.availability">borrowed</td>
-        <td ><button type="button" (click)="updateBook(book)" class="btn btn-warning">Update</button></td>
+        <td ><button type="button" (click)="updateBook(book,i)" class="btn btn-warning">Update</button></td>
         <td ><button type="button" (click)="deleteBook(book)" class="btn btn-danger">Delete</button></td>
 
       </tr>      

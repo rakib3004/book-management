@@ -18,8 +18,8 @@ export class UpdateBookComponent implements OnInit {
   }
 
 
-  saveToBookList(){
-    
+  updateBook(){
+    console.log(this.givenBook)
   }
 
 }
