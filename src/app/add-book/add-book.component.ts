@@ -18,5 +18,7 @@ export class AddBookComponent implements OnInit {
   newBook = new Book();
   addBook(newBook: Book) {
     console.log(newBook);
+    this.bookService.addBook(newBook);
+    this.route.navigate(['']);
   }
 }

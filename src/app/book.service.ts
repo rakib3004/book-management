@@ -27,7 +27,7 @@ export class BookService {
     return this.books;
   }
 
-  addBook() {}
+  
   deleteBook(givenBook: Book): Book[] {
     this.books = this.books.filter((book) => givenBook.id != book.id);
     return this.books;
@@ -35,6 +35,10 @@ export class BookService {
 
   updateBook(givenBook: Book) {
     this.books.splice(this.bookToBeUpdatedIndex, 1, givenBook);
+  }
+  addBook(newBook: Book) {
+    this.books.push(newBook);
+
   }
 
   getBookToBeUpdated(): Book {
