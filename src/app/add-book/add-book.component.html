@@ -1,25 +1,48 @@
-<br>
-<br>
-<h1 style="text-align: center;">Add New Book</h1>
-<form style="text-align: center;">
-    <div class="form-group">
-        <label for="name">Book ID</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newBook.id" [ngModelOptions]="{standalone:true}"   >
-      </div>
-    <div class="form-group">
-      <label for="name">Book name</label>
-      <input type="text" class="form-control" id="name"  [(ngModel)]="newBook.name" [ngModelOptions]="{standalone:true}"  >
-    </div>
-    <div class="form-group">
-      <label for="name">Publishing Year</label>
-      <input type="text" class="form-control" id="year"  [(ngModel)]="newBook.year" [ngModelOptions]="{standalone:true}" >
-    </div>
-    <div class="form-check">
-        <input type="checkbox" class="form-control-check" id="avability" [(ngModel)]="newBook.availability" [ngModelOptions]="{standalone:true}" >
-        <label for="name">Available</label>
-    </div>
-    <button type="submit" (click)="addBook(newBook)" class="btn btn-success">Save</button>
-
-
-
-  </form>
+<br />
+<br />
+<h1 style="text-align: center">Add New Book</h1>
+<form style="text-align: center">
+  <div class="form-group">
+    <label for="name">Book ID</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      [(ngModel)]="newBook.id"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Book name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      [(ngModel)]="newBook.name"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Publishing Year</label>
+    <input
+      type="text"
+      class="form-control"
+      id="year"
+      [(ngModel)]="newBook.year"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-check">
+    <input
+      type="checkbox"
+      class="form-control-check"
+      id="avability"
+      [(ngModel)]="newBook.availability"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <label for="name">Available</label>
+  </div>
+  <button type="submit" (click)="addBook(newBook)" class="btn btn-success">
+    Save
+  </button>
+</form>
