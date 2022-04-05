@@ -42,7 +42,7 @@ export class BookService {
   }
 
   getBookToBeUpdated(): Book {
-    return this.bookToBeUpdated;
+    return JSON.parse(JSON.stringify(this.bookToBeUpdated));
   }
   setBookToBeUpdated(givenBook: Book, index: number) {
     this.bookToBeUpdated = givenBook;
