@@ -17,6 +17,9 @@ export class HomeMenuComponent implements OnInit {
     this.route.navigate(['aboutUs']);
   }
   viewHome(){
+    this.route.navigate(['']);
+  }
+  viewBooks(){
     this.route.navigate(['books']);
   }
 }
