@@ -16,18 +16,17 @@ export class BookListComponent implements OnInit {
   }
 
   deleteBook(book: Book) {
-    console.log(book);
     this.books = this.bookService.deleteBook(book);
   }
 
   updateBook(book: Book, index: number) {
-    console.log(book);
+   
     this.bookService.setBookToBeUpdated(book, index);
     this.router.navigate(['updateBook']);
   }
 
   addBook() {
-    
+
     this.router.navigate(['addBook']);
   }
 }

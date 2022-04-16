@@ -38,12 +38,44 @@ export class MemberService {
     {id: 'BSSE 1133', name: 'Khalid Hasan Saad', designation: 'Science Affairs Secretary'},
     {id: 'BSSE 1136', name: 'Rashid Sabab Nihal', designation: 'Assistant Science Affairs Secretary'},
     {id: 'BSSE 1127', name: 'Tahmeed Mahbub', designation: 'Reader Welfare Secretary'},
-    {id: 'BSSE 1111', name: 'Kazi Muktadir Ahmed', name: 'Assistant Reader Welfare Secretary' },
-    {id: 'BSSE 1128', name: 'Tasmia Zerin', name: 'Publicity Secretary'},
-    {id: 'BSSE 1115', name: 'Jitesh Sureka', name: 'Assistant Publicity Secretary'},
-    {id: 'BSSE 1122', name: 'Saad Sakib Noor', name: 'Resource Management Secretary' },
-    {id: 'BSSE 1102', name: 'Fahim Morshed', name: 'Assistant Resource Management Secretary' },
-    {id: 'BSSE 1112', name: 'Md. Arif Hasan', name: 'Literature Secretary' },
-    {id: 'BSSE 1123', name: 'Shartaz Sazid Nahid', name: 'Assistant Literature Secretary' },
+    {id: 'BSSE 1111', name: 'Kazi Muktadir Ahmed', designation: 'Assistant Reader Welfare Secretary' },
+    {id: 'BSSE 1128', name: 'Tasmia Zerin', designation: 'Publicity Secretary'},
+    {id: 'BSSE 1115', name: 'Jitesh Sureka', designation: 'Assistant Publicity Secretary'},
+    {id: 'BSSE 1122', name: 'Saad Sakib Noor', designation: 'Resource Management Secretary' },
+    {id: 'BSSE 1102', name: 'Fahim Morshed', designation: 'Assistant Resource Management Secretary' },
+    {id: 'BSSE 1112', name: 'Md. Arif Hasan', designation: 'Literature Secretary' },
+    {id: 'BSSE 1123', name: 'Shartaz Sazid Nahid', designation: 'Assistant Literature Secretary' },
   ];
+
+
+
+  memberToBeUpdated = new Member();
+  memberToBeUpdatedIndex: any = 0;
+
+
+  getMembers(): Member[] {
+    return this.members;
+  }
+
+  
+  removeMember(givenMember: Member): Member[] {
+    this.members = this.members.filter((member) => givenMember.id != member.id);
+    return this.members;
+  }
+
+  updateMember(givenMember: Member) {
+    this.members.splice(this.memberToBeUpdatedIndex, 1, givenMember);
+  }
+  addMember(newMember: Member) {
+    this.members.push(newMember);
+
+  }
+
+  getMemberToBeUpdated(): Member {
+    return JSON.parse(JSON.stringify(this.memberToBeUpdated));
+  }
+  setMemberToBeUpdated(givenMember: Member, index: number) {
+    this.memberToBeUpdated = givenMember;
+    this.memberToBeUpdatedIndex = index;
+  }
 }
