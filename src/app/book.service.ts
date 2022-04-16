@@ -5,6 +5,9 @@ import { Book } from './book';
   providedIn: 'root',
 })
 export class BookService {
+
+  constructor() {}
+
   books: Book[] = [
     { id: 1, name: 'Java Programming', year: 2004, availability: true },
     { id: 2, name: 'Python Programming', year: 2002, availability: false },
@@ -21,7 +24,6 @@ export class BookService {
   bookToBeUpdated = new Book();
   bookToBeUpdatedIndex: any = 0;
 
-  constructor() {}
 
   getBooks(): Book[] {
     return this.books;
