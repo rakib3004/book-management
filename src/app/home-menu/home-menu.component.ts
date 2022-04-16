@@ -22,4 +22,7 @@ export class HomeMenuComponent implements OnInit {
   viewBooks(){
     this.route.navigate(['books']);
   }
+  viewMembers(){
+    this.route.navigate(['']);
+  }
 }

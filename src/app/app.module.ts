@@ -9,6 +9,7 @@ import { UpdateBookComponent } from './update-book/update-book.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FormsModule } from '@angular/forms';
 import { AddBookComponent } from './add-book/add-book.component';
+import { MemberListComponent } from './member-list/member-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddBookComponent } from './add-book/add-book.component';
     HomeMenuComponent,
     UpdateBookComponent,
     AboutUsComponent,
-    AddBookComponent
+    AddBookComponent,
+    MemberListComponent
   ],
   imports: [
     BrowserModule,
