@@ -15,17 +15,17 @@ export class MemberListComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
-  deleteBook(member: Member) {
+  removeMember(member: Member) {
     this.members = this.memberService.removeMember(member);
   }
 
-  updateBook(member: Member, index: number) {
+  updateMember(member: Member, index: number) {
    
     this.memberService.setMemberToBeUpdated(member, index);
     this.router.navigate(['updateBook']);
   }
 
-  addBook() {
+  addMember() {
 
     this.router.navigate(['addBook']);
   }
