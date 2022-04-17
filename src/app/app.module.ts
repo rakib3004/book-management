@@ -10,6 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FormsModule } from '@angular/forms';
 import { AddBookComponent } from './add-book/add-book.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MemberListComponent } from './member-list/member-list.component';
     UpdateBookComponent,
     AboutUsComponent,
     AddBookComponent,
-    MemberListComponent
+    MemberListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
