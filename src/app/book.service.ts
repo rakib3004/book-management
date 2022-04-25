@@ -21,6 +21,12 @@ export class BookService {
     { id: 10, name: 'Typescript Programming', year: 2015, availability: true },
   ];
 
+
+ /*
+ 
+ testing comment
+ */
+
   bookToBeUpdated = new Book();
   bookToBeUpdatedIndex: any = 0;
 
