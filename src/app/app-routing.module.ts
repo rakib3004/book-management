@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'books', component:BookListComponent},
   {path:'updateBook', component:UpdateBookComponent},
+  {path:'updateMember', component:UpdateBookComponent},
   {path:'addBook', component:AddBookComponent},
   {path:'aboutUs', component:AboutUsComponent},
   {path:'members', component:MemberListComponent},
