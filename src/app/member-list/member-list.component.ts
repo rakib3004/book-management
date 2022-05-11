@@ -22,7 +22,7 @@ export class MemberListComponent implements OnInit {
   updateMember(member: Member, index: number) {
    
     this.memberService.setMemberToBeUpdated(member, index);
-    this.router.navigate(['updateBook']);
+    this.router.navigate(['updateMember']);
   }
 
   addMember() {

@@ -20,7 +20,7 @@ export class UpdateMemberComponent implements OnInit {
 
   updateMember(){
     this.memberService.updateMember(this.givenMember);
-    this.route.navigate(['updateMember'])
+    this.route.navigate(['members'])
   }
 
 }
