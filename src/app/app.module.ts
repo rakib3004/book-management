@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { AddBookComponent } from './add-book/add-book.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { HomeComponent } from './home/home.component';
+import { AddMemberComponent } from './add-member/add-member.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     AboutUsComponent,
     AddBookComponent,
     MemberListComponent,
-    HomeComponent
+    HomeComponent,
+    AddMemberComponent
   ],
   imports: [
     BrowserModule,
