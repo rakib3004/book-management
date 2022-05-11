@@ -7,12 +7,13 @@ import { BookListComponent } from './book-list/book-list.component';
 import { HomeComponent } from './home/home.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
+import { UpdateMemberComponent } from './update-member/update-member.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'books', component:BookListComponent},
   {path:'updateBook', component:UpdateBookComponent},
-  {path:'updateMember', component:UpdateBookComponent},
+  {path:'updateMember', component:UpdateMemberComponent},
   {path:'addBook', component:AddBookComponent},
   {path:'aboutUs', component:AboutUsComponent},
   {path:'members', component:MemberListComponent},

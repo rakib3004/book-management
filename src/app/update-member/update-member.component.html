@@ -1,1 +1,39 @@
-<p>update-member works!</p>
+<br />
+<br />
+<h1 style="text-align: center">Update Book</h1>
+<form style="text-align: center">
+  <div class="form-group">
+    <label for="name">Member ID</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      [(ngModel)]="givenMember.id"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Member Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="year"
+      [(ngModel)]="givenMember.name"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-check">
+    <label for="name">Member Designation</label>
+
+    <input
+      type="checkbox"
+      class="form-control-check"
+      id="avability"
+      [(ngModel)]="givenMember.designation"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <button type="submit" (click)="updateMember()" class="btn btn-success">
+    Save
+  </button>
+</form>
