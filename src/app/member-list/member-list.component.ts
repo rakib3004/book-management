@@ -27,6 +27,6 @@ export class MemberListComponent implements OnInit {
 
   addMember() {
 
-    this.router.navigate(['addBook']);
+    this.router.navigate(['addMember']);
   }
 }

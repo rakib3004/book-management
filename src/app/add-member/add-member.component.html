@@ -1,1 +1,39 @@
-<p>add-member works!</p>
+<br />
+<br />
+<h1 style="text-align: center">Add New Book</h1>
+<form style="text-align: center">
+  <div class="form-group">
+    <label for="name">Memeber ID</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      [(ngModel)]="newMember.id"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Member Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      [(ngModel)]="newMember.name"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Member Designation</label>
+    <input
+      type="text"
+      class="form-control"
+      id="year"
+      [(ngModel)]="newMember.designation"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+ 
+  <button type="submit" (click)="addMember(newMember)" class="btn btn-success">
+    Save
+  </button>
+</form>
