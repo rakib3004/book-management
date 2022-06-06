@@ -10,7 +10,11 @@
     <tbody>
         <tr *ngFor="let history of histories; let i = index">
           <td>{{ history.title }}</td>
-          <td>{{ history.action }}</td>
+          <div [ngSwitch]="history.action">
+          <td *ngSwitchCase="'read'"><span class="badge badge-warning">{{ history.action }}</span></td>
+          <td *ngSwitchCase="'rating'"><span class="badge badge-primary">{{ history.action }}</span></td>
+          <td *ngSwitchCase="'fav list'"><span class="badge badge-success">{{ history.action }}</span></td>
+        </div>
           <td>{{ history.date }}</td>
           <td>{{ history.time }}</td>
 
