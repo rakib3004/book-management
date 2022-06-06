@@ -13,6 +13,7 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { HomeComponent } from './home/home.component';
 import { AddMemberComponent } from './add-member/add-member.component';
 import { UpdateMemberComponent } from './update-member/update-member.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UpdateMemberComponent } from './update-member/update-member.component';
     MemberListComponent,
     HomeComponent,
     AddMemberComponent,
-    UpdateMemberComponent
+    UpdateMemberComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

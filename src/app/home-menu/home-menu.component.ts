@@ -47,4 +47,7 @@ export class HomeMenuComponent implements OnInit {
   viewMembers(){
     this.route.navigate(['members']);
   }
+  viewHistory(){
+    this.route.navigate(['history']);
+  }
 }
